@@ -1,0 +1,158 @@
+<html>
+<head>
+<title> order food</title>
+<head>
+<link rel="stylesheet"  href="octoviano.css">
+
+</head>
+
+
+
+
+<body style="background-color:cyan;padding:20px;">
+<h1 style="text-align:center;padding:20px;font-size:40px;color:black;background-color:purple;"> THE ONLY OCTOVIAN'S RESTAURANT</h1>
+<h2 style="text-align:center;padding:10px;font-size:40px;color:white;background-color:purple;"> PURCHASE NOW!!!!</h2>
+
+
+
+<form   name="myForm" onsubmit="return validateForm()" method="post">
+   <div class="formdesign" id="name">
+         <br>  first Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+        </div>
+  
+  <label for="lname"> <br>Last name:</label>
+  <input type="text" id="lname" name="lname" required><b><span class="formerror"></span></b>
+    
+   <div class="formdesign" id="email">
+       <br>     Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="phone">
+          <br>  Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+        </div>
+  
+ 
+   
+
+   
+    <hr><div>
+        password : <input type="password">
+    </div><br>
+	
+	
+    <div>
+        DOB : <input type="date">
+    </div>
+	<input  type="submit" value="Submit">
+</form>
+
+
+
+<form>
+<h5>GENDER</h5>
+
+
+                                    <input type="radio" id="GENDER1" name="fav_language" value="MALE">
+  <label for="GENDER1">MALE</label>
+
+
+  <input type="radio" id="GENDER" name="fav_language" value="FEMALE">
+  <label for="GENDER2">FEMALE</label>
+
+  <input type="radio" id="GENDER3" name="fav_language" value="OTHER">
+<label for="GENDER3">OTHER</label>
+<br
+
+
+
+
+
+  <table style="background-color:white;margin-left: 20px;"> <br> <tr>
+<td>country </td>
+<td> 
+<select> 
+<option>USA</option>
+<option>ITALY</option>
+<option>CHINA</option>
+<option>RUSSIA</option>
+<option>INDIA</option>
+<option>CANADA</option>
+<option>BELGIUM</option>
+<option>GERMANY</option>
+<option>FRANCE</option>
+
+
+</select>
+</td> 
+</tr>
+
+</table>
+</form> 
+
+
+
+
+  <div>
+        DOB : <input type="date">
+    </div><br>
+
+
+<div> 
+<h3>==========Price list==========</h2>
+<table width="40%" id="alignment" > 
+<tr>  
+<th>Food Item</th> 
+<th></th>
+<th>Price(Rs.)</th>
+</tr> <br>
+<tr>
+<td><b>VEGETABLE PIZZA</b><img src="https://th.bing.com/th/id/OIP.VAEYvEZDn6pOqCFjrQVQIgHaHa?pid=ImgD"></td> 
+<td> <input type="checkbox"  >     - </td>
+<td>700.00   <input id="btnone" type="number" name="qtn" max="10" min="1" ></td> 
+</tr> <br>
+<tr>
+<td><b>ITALIAN MACARONI PASTA</b> <img src="https://th.bing.com/th/id/OIP.41ctyuE8txLQQN4GqlYSCwHaE7?pid=ImgDet&rs=1"></td>
+<td>  <input type="checkbox"  >    - </td> 
+<td>500.00   <input id="btnone" type="number" name="qtn" max="10" min="1" ></td> 
+</tr><br>
+<tr> 
+<td><b>BURGER </b><img src="https://lilmonkeysplaygrounds.com/wp-content/uploads/2020/03/Bistro-Cheese1-400x367.jpg"></td>
+<td> <input type="checkbox"  >      - </td>  
+<td>300.00   <input id="btnone" type="number" name="qtn" max="10" min="1" > </td>
+</tr><br> 
+<tr>  
+<td><b>CHINESE SHEZWANN NOODLES </b><img src="https://th.bing.com/th/id/OIP.sfxbhJQjIbhAyUszx9xbBAHaFv?pid=ImgDet&rs=1"> </td>
+<td> <input type="checkbox"  >      - </td> 
+<td>200.00   <input id="btnone" type="number" name="qtn" max="10" min="1" >
+
+  </td> 
+</tr>  
+<tr>
+<td><b>
+WATER BOTTLE</b> </td>
+<td> <input  type="checkbox"  >     - </td> 
+<td>     70.00 <input id="btnone" type="number" name="qtn" max="10" min="1" > </td>
+</tr>
+</table>
+
+
+
+<br>
+
+
+
+
+
+</form>
+
+<br>
+
+
+<button  onclick="alert('your order has been sucessfully placed!!!, enjoy your meal')" style="margin-right:100px;">place order</button>
+
+
+
+
+</body>
+<script src="javascriptfinal.js"></script>
+</html>

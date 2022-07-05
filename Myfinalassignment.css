@@ -1,0 +1,30 @@
+body{
+    background-color:cyan ; padding:20px;
+        }
+
+#rocko{ text-align:center;padding:20px; 
+      font-size:40px;
+      color:black;
+      background-color:purple;
+    }
+  
+    
+.rolex{
+    text-align:center;
+    padding:10px;
+    font-size:40px;
+    color:white;
+    background-color:purple;
+}
+
+.polish{
+ background-color:white;
+ margin-left: 110px;
+}
+
+#carryok{
+    width: 40%;
+   text-align: center;
+
+}
+

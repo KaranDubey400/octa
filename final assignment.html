@@ -2,157 +2,186 @@
 <head>
 <title> order food</title>
 <head>
-<link rel="stylesheet"  href="octoviano.css">
+  <!--dowb here the link of the css file -->
+<link  rel="stylesheet"  href="Myfinalassignment.css">
 
 </head>
+<body >
+
+
+<h1 id="rocko">  OCTOVIAN'S RESTAURANT</h1>
+
+<h2 class="rolex"> GET flat 40% off,ORDER NOW</h2>
+
+<!--location of javascript file -->
+<script src="javascriptfinal.js"></script>
+
+<form >
+
+ <div>
+  firstname: <input type="text" name="fname" id="school" onblur="Nameinput1();" ><span id="hulk"></span>
+ </div><br><br><br>
 
 
 
 
-<body style="background-color:cyan;padding:20px;">
-<h1 style="text-align:center;padding:20px;font-size:40px;color:black;background-color:purple;"> THE ONLY OCTOVIAN'S RESTAURANT</h1>
-<h2 style="text-align:center;padding:10px;font-size:40px;color:white;background-color:purple;"> PURCHASE NOW!!!!</h2>
-
-
-
-<form   name="myForm" onsubmit="return validateForm()" method="post">
-   <div class="formdesign" id="name">
-         <br>  first Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
-        </div>
-  
-  <label for="lname"> <br>Last name:</label>
-  <input type="text" id="lname" name="lname" required><b><span class="formerror"></span></b>
-    
-   <div class="formdesign" id="email">
-       <br>     Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
-        </div>
-
-        <div class="formdesign" id="phone">
-          <br>  Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
-        </div>
-  
  
-   
+  <div >
+  <label for="lname"><br> Last name:</label>
+  <input type="text" id="lname" name="lname" required><b> </b>
+    </div>
 
-   
-    <hr><div>
-        password : <input type="password">
-    </div><br>
+
+   <div >
+       <br>     Email: <input type="email"  id="chico" onblur="email1();"   name="femail" required></b><span id="thor"></span>
+        </div>
+
+
+        <div >
+          <br>  Phone: <input type="phone" id="pokemon" onblur="phone1();" name="fphone" required><span id="doremon"></span>
+        </div>
+  
+
+   <br><div>
+    password: <input type="password" name="fpass" required >
+   </div>
 	
-	
+	<br>
+
     <div>
         DOB : <input type="date">
-    </div>
-	<input  type="submit" value="Submit">
+    </div><br>
+  
+
+
+
+
+
+
+ <h5 >GENDER</h5>
+
+
+                        
+                                    <input type="radio" id="GENDER1" name="fav_language" value="MALE">
+                                   
+                              
+ <label for="GENDER1">MALE</label>
+
+
+ <input type="radio" id="GENDER2" name="fav_language" value="FEMALE">
+ <label for="GENDER2">FEMALE</label>
+
+ <input type="radio" id="GENDER3" name="fav_language" value="OTHER">
+ <label for="GENDER3">OTHER</label>
+  <br>
+
+
+
+
+
+ <table class="polish" > 
+  <br> 
+    <tr>
+ <td>country </td>
+ <td> 
+ <select id="country"> 
+ <option>USA</option>
+ <option>ITALY</option>
+ <option>CHINA</option>
+ <option>RUSSIA</option>
+ <option>INDIA</option>
+ <option>CANADA</option>
+ <option>BELGIUM</option>
+ <option>GERMANY</option>
+ <option>FRANCE</option>
+
+
+ </select>
+ </td> 
+ </tr>
+
+ </table>
 </form>
 
 
+<button type="button"  onclick="pika()" required> ready to go </button>
 
-<form>
-<h5>GENDER</h5>
-
-
-                                    <input type="radio" id="GENDER1" name="fav_language" value="MALE">
-  <label for="GENDER1">MALE</label>
-
-
-  <input type="radio" id="GENDER" name="fav_language" value="FEMALE">
-  <label for="GENDER2">FEMALE</label>
-
-  <input type="radio" id="GENDER3" name="fav_language" value="OTHER">
-<label for="GENDER3">OTHER</label>
-<br
+<span id="spiderman"></span>
 
 
 
+ 
 
-
-  <table style="background-color:white;margin-left: 20px;"> <br> <tr>
-<td>country </td>
-<td> 
-<select> 
-<option>USA</option>
-<option>ITALY</option>
-<option>CHINA</option>
-<option>RUSSIA</option>
-<option>INDIA</option>
-<option>CANADA</option>
-<option>BELGIUM</option>
-<option>GERMANY</option>
-<option>FRANCE</option>
-
-
-</select>
-</td> 
-</tr>
-
-</table>
-</form> 
-
-
-
-
-  <div>
-        DOB : <input type="date">
-    </div><br>
-
-
+<!--food item list along with their prices -->
 <div> 
-<h3>==========Price list==========</h2>
-<table width="40%" id="alignment" > 
-<tr>  
+<h3>==========Price list==========</h3></div>
+<table id="carryok" > 
+<tr> 
+
 <th>Food Item</th> 
 <th></th>
-<th>Price(Rs.)</th>
+<th>Price($)</th>
 </tr> <br>
-<tr>
-<td><b>VEGETABLE PIZZA</b><img src="https://th.bing.com/th/id/OIP.VAEYvEZDn6pOqCFjrQVQIgHaHa?pid=ImgD"></td> 
-<td> <input type="checkbox"  >     - </td>
-<td>700.00   <input id="btnone" type="number" name="qtn" max="10" min="1" ></td> 
-</tr> <br>
-<tr>
-<td><b>ITALIAN MACARONI PASTA</b> <img src="https://th.bing.com/th/id/OIP.41ctyuE8txLQQN4GqlYSCwHaE7?pid=ImgDet&rs=1"></td>
-<td>  <input type="checkbox"  >    - </td> 
-<td>500.00   <input id="btnone" type="number" name="qtn" max="10" min="1" ></td> 
-</tr><br>
-<tr> 
-<td><b>BURGER </b><img src="https://lilmonkeysplaygrounds.com/wp-content/uploads/2020/03/Bistro-Cheese1-400x367.jpg"></td>
-<td> <input type="checkbox"  >      - </td>  
-<td>300.00   <input id="btnone" type="number" name="qtn" max="10" min="1" > </td>
-</tr><br> 
-<tr>  
-<td><b>CHINESE SHEZWANN NOODLES </b><img src="https://th.bing.com/th/id/OIP.sfxbhJQjIbhAyUszx9xbBAHaFv?pid=ImgDet&rs=1"> </td>
-<td> <input type="checkbox"  >      - </td> 
-<td>200.00   <input id="btnone" type="number" name="qtn" max="10" min="1" >
 
+<tr>
+  <span id="lexi"></span>
+<td><b>VEGETABLE PIZZA</b>
+
+  <img src="https://th.bing.com/th/id/OIP.VAEYvEZDn6pOqCFjrQVQIgHaHa?pid=ImgD"></td> 
+<td> <input type="checkbox"  >     - </td>
+<td><input name="pizza" id="price1"  value="30" readonly> 
+   <input  type="number" name="qtn1" max="10" min="1" id="evior" ></td> 
+  
+ </tr> <br>
+
+
+<tr>
+<td><b><br>ITALIAN MACARONI PASTA</b> <img src="https://th.bing.com/th/id/OIP.41ctyuE8txLQQN4GqlYSCwHaE7?pid=ImgDet&rs=1"></td>
+<td>  <input type="checkbox"  >    - </td> 
+<td><input name="pasta" id="price2"  value="25" readonly>   <input type="number" name="qtn2" max="10" min="1" id="loki"></td> 
+</tr><br>
+
+
+<tr> 
+<td><b><br><br>BURGER </b><img src="https://lilmonkeysplaygrounds.com/wp-content/uploads/2020/03/Bistro-Cheese1-400x367.jpg"></td>
+<td> <input type="checkbox"  >      - </td>  
+<td><input name="BURGER" id="price3"  value="10" readonly>   <input  type="number" name="qtn3" max="10" min="1" id="kingburger" > <span id="kinggburger"></span></td>
+</tr><br> 
+
+
+<tr>  
+<td><b><br><br>CHINESE SHEZWANN NOODLES </b><img src="https://th.bing.com/th/id/OIP.sfxbhJQjIbhAyUszx9xbBAHaFv?pid=ImgDet&rs=1"> </td>
+<td> <input type="checkbox"  >      - </td> 
+<td><input name="NOODLES" id="price4"  value="20" readonly>    <input  type="number" name="qtn4" max="10" min="1" id="noodles" >
+  <span id="shezwannoodles"></span>
   </td> 
 </tr>  
 <tr>
-<td><b>
+
+
+   <td><b>
+
 WATER BOTTLE</b> </td>
 <td> <input  type="checkbox"  >     - </td> 
-<td>     70.00 <input id="btnone" type="number" name="qtn" max="10" min="1" > </td>
+<td>     <input name="waterbottle" id="price5"  value="5" readonly>  <input  type="number" name="qtn5" max="10" min="1" id="waterbottle1" >
+  <span id="mineralwaterbottle"></span> -->
+
+ </td>
 </tr>
+
+
+<button type="button"  onclick="totalorder();" required> place has been  order </button>
+
 </table>
-
-
-
 <br>
-
-
-
-
-
 </form>
-
 <br>
 
 
-<button  onclick="alert('your order has been sucessfully placed!!!, enjoy your meal')" style="margin-right:100px;">place order</button>
 
-
-
+<button  onclick="alert('your order has been sucessfully placed!!!, enjoy your meal')" id="despacito">                place order </button>
 
 </body>
-<script src="javascriptfinal.js"></script>
+
+
 </html>

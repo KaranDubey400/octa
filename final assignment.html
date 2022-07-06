@@ -1,0 +1,158 @@
+<html>
+<head>
+<title> ORDER PIZZA</title>
+<!-- octaelliptical's project-->
+<head>
+  <!--down here the link of the css file -->
+<link  rel="stylesheet"  href="Myfinalassignment.css">
+
+</head>
+<body >
+
+
+<h1 id="rocko">  OCTOVIAN'S PIZZA</h1>
+
+<h2 class="rolex"> GET flat 40% off,ORDER NOW</h2>
+
+<!--location of javascript file -->
+<script src="javascriptfinal.js"></script>
+
+<form >
+  <fieldset>
+  <legend>PLEASE FILL YOUR  DETAILS</legend>
+  <br>
+
+ <div>   
+  firstname: <input type="text" name="fname" id="school"  onblur="inputfname1();"    required ><span id="fnames"></span>
+ </div><br>
+
+
+
+  <div >
+  <label for="lname"><br> Last name:</label>
+  <input type="text" id="lname" name="lname" onblur="inputlname1();" required><b> </b><span id="lnames"></span>
+    </div>
+
+
+   <div >
+       <br>     Email: <input type="email"  id="chico" onblur="email1();"   name="femail" required ></b><span id="thor"></span>
+       <!--onblur event used in javascript file -->
+        </div>
+
+
+        <div >
+          <br>  Phone: <input type="phone" id="pokemon" onblur="phone1();" name="fphone" required><span id="doremon"></span><span id="phone11"></span>
+            <!--onblur event used in javascript file -->
+        </div>
+  
+
+   <br><div>
+    password: <input type="password" name="fpass" id="password12" onblur="password11();" required ><span id="password13">
+    </span>
+   </div>
+	
+	<br>
+
+    <div>
+        DOB : <input type="date" id="birthday1">
+    </div><br>
+  
+
+
+
+
+
+
+ <h5 >GENDER</h5>
+
+<!--gender  info for a restuarant,not for customer dsiplaying-->
+                        
+                                    <input type="radio" id="GENDER1" name="fav_language" value="MALE">
+                                   
+                              
+ <label for="GENDER1">MALE</label>
+
+
+ <input type="radio" id="GENDER2" name="fav_language" value="FEMALE">
+ <label for="GENDER2">FEMALE</label>
+
+ <input type="radio" id="GENDER3" name="fav_language" value="OTHER">
+ <label for="GENDER3">OTHER</label>
+  <br>
+
+
+
+
+
+ <table class="polish" > 
+  <br> 
+    <tr>
+ <td>country </td>
+ <td> 
+ <select id="country"> 
+ <option>USA</option>
+ <option>ITALY</option>
+ <option>CHINA</option>
+ <option>RUSSIA</option>
+ <option>INDIA</option>
+ <option>CANADA</option>
+ <option>BELGIUM</option>
+ <option>GERMANY</option>
+ <option>FRANCE</option>
+
+
+ </select>
+ </td> 
+ </tr><br>
+
+ </table>
+</fieldset>
+ <br><br>
+<button type="button"  onclick="pika()" > check your given details  </button><!--pika event is in javascript file to display the details for rececking for customers-->
+
+<span id="spiderman"></span>
+</form>
+
+
+
+
+
+ <form>
+
+
+<!--food item  along with their price -->
+<div> 
+<h3>==========PLACE YOUR ORDER HERE ==========</h3></div>
+<table id="carryok" > 
+
+<tr> 
+
+<th>Food Item</th> 
+<th></th>
+<th>Price($)</th>
+</tr> <br>
+
+
+</table>
+
+<h3><b>ITALIAN PIZZA</b></h3>
+
+  <img src="https://tse1.mm.bing.net/th?id=OIF.PtuoPxqyL0o%2fjcCg%2bAhp2A&pid=ImgDet&rs=1"> 
+ <input  >     - 
+<input name="pizza" id="price1"  value="30" readonly> 
+   <input  type="number" name="qtn1" max="100" min="1" id="evior" > <span id="lexi"></span>
+  
+
+
+<br><br><br>
+
+<button type="button"  onclick="totalorder();" required> place your order  </button>
+
+
+
+<br>
+</form>
+</body>
+
+
+</html>
